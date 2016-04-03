@@ -46,7 +46,11 @@ public class Machete100 {
         for (int i = 0; i < massiv.length; i++) {
             String xs = "";
             for (int j = 0; j < massiv.length; j++) {
-                xs+= "["+massiv[i][j]+"]";
+                if(massiv[i][j] > 9) {
+                    xs += "[" + massiv[i][j] + "] ";
+                }else{
+                    xs += "[" + massiv[i][j] + "]  ";
+                }
             }
             System.out.println(xs);
         }
